@@ -1,6 +1,6 @@
-import { getEducation, IEducation } from '@/actions/get-education';
-import { getManagementSkills } from '@/actions/get-management-skills';
-import { getTechnicalSkills } from '@/actions/get-technical-skills';
+import { getEducation, IEducation } from '@/data/get-education';
+import { getManagementSkills } from '@/data/get-management-skills';
+import { getTechnicalSkills } from '@/data/get-technical-skills';
 import { Education } from '@/components/education';
 import { Experience } from '@/components/experience';
 import { Mission } from '@/components/mission';

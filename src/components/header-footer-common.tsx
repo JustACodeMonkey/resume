@@ -6,7 +6,7 @@ export const HeaderFooterCommon = () => {
       <div className="flex flex-col gap-2 w-full">
         <div className="text-5xl">
           <span className="text-white">Greg </span>
-          <span className="text-lime-300">Yantz</span>
+          <span className="text-lime-400">Yantz</span>
         </div>
         <span className="text-white text-sm">Senior Developer / Director of Software Development</span>
       </div>

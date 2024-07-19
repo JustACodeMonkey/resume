@@ -1,4 +1,4 @@
-import { getJobs, IJob } from '@/actions/get-jobs';
+import { getJobs, IJob } from '@/data/get-jobs';
 import { Job } from './job';
 
 export const Experience = async () => {

@@ -1,4 +1,4 @@
-import { IJob, IJobDetails } from '@/actions/get-jobs';
+import { IJob, IJobDetails } from '@/data/get-jobs';
 
 export interface JobProps {
   job: IJob;

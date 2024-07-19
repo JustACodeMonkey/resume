@@ -1,4 +1,4 @@
-import { IEducation } from '@/actions/get-education';
+import { IEducation } from '@/data/get-education';
 
 interface EducationProps {
   education: IEducation[];

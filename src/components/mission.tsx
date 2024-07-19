@@ -1,4 +1,4 @@
-import { getMission } from '@/actions/get-mission';
+import { getMission } from '@/data/get-mission';
 
 export const Mission = async () => {
   const mission = await getMission();
