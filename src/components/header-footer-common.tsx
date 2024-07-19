@@ -13,8 +13,8 @@ export const HeaderFooterCommon = () => {
       <div className="absolute top-0 right-0 grid grid-cols-2 gap-3">
         <a href="tel:+19059013075"><MobileIcon className="text-white w-5 h-5" /></a>
         <a href="mailto:greg.yantz@gmail.com"><EnvelopeOpenIcon className="text-white w-5 h-5" /></a>
-        <a href="https://www.linkedin.com/in/greg-yantz/"><LinkedInLogoIcon className="text-white w-5 h-5" /></a>
-        <a href="https://github.com/JustACodeMonkey"><GitHubLogoIcon className="text-white w-5 h-5" /></a>
+        <a href="https://www.linkedin.com/in/greg-yantz/" target="_blank" referrerPolicy="no-referrer"><LinkedInLogoIcon className="text-white w-5 h-5" /></a>
+        <a href="https://github.com/JustACodeMonkey" target="_blank" referrerPolicy="no-referrer"><GitHubLogoIcon className="text-white w-5 h-5" /></a>
       </div>
     </div>
   );
