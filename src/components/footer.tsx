@@ -36,7 +36,7 @@ export const Footer = () => {
           alt="JustACodeMonkey logo"
         />
       </div>
-      <p className="text-center mt-4">&copy; 2024</p>
+      <p className="text-center text-white mt-4">&copy; 2024</p>
     </footer>
   );
 };

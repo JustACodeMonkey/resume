@@ -1,3 +1,5 @@
+import { SimpleCard } from './simple-card';
+
 interface SkillsProps {
   title: string;
   skills: {
@@ -8,8 +10,7 @@ interface SkillsProps {
 
 export const Skills = ({ title, skills }: SkillsProps) => {
   return (
-    <section className="border-y border-opacity-20 bg-black/5 dark:bg-white/10 p-2 rounded-lg min-w-60 space-y-4">
-      <h2 className="text-blue-500 font-semibold text-xl uppercase">{title}</h2>
+    <SimpleCard title={title}>
       <ul>
         {skills.map(skill => {
           return (
@@ -23,6 +24,6 @@ export const Skills = ({ title, skills }: SkillsProps) => {
           );
         })}
       </ul>
-    </section>
+    </SimpleCard>
   );
 };

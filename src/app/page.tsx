@@ -5,6 +5,8 @@ import { Education } from '@/components/education';
 import { Experience } from '@/components/experience';
 import { Mission } from '@/components/mission';
 import { Skills } from '@/components/skills';
+import Image from 'next/image';
+import { SimpleCard } from '@/components/simple-card';
 
 export default async function Home() {
   
@@ -13,7 +15,7 @@ export default async function Home() {
   const education = await getEducation() as IEducation[];
 
   return (
-    <main className="flex flex-col gap-4 space-y-4 py-4">
+    <div className="flex flex-col gap-4 space-y-4 py-4">
       <Mission />
       <div className="flex flex-col md:flex-row gap-4">
         <div className="flex flex-col space-y-4">
@@ -37,7 +39,28 @@ export default async function Home() {
         </div>
         <Experience />
       </div>
-      
-    </main>
+
+      <SimpleCard title="When I'm not working...">
+        <p className="mt-1 text-sm">You might find me biking, drumming, or skiing</p>
+        <div className="flex flex-col sm:flex-row justify-around items-center gap-8 w-full">
+          <Image
+            src="/bike.png"
+            width={0}
+            height={0}
+            sizes='100vw'
+            className="max-w-96 w-auto h-64 rounded-3xl"
+            alt=""
+          />
+          <Image
+            src="/drums.png"
+            width={0}
+            height={0}
+            sizes='100vw'
+            className="max-w-96 w-auto h-64 rounded-3xl"
+            alt=""
+          />
+        </div>
+      </SimpleCard>
+    </div>
   );
 }

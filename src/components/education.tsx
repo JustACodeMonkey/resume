@@ -1,4 +1,5 @@
 import { IEducation } from '@/data/get-education';
+import { SimpleCard } from './simple-card';
 
 interface EducationProps {
   education: IEducation[];
@@ -6,8 +7,7 @@ interface EducationProps {
 
 export const Education = ({ education }: EducationProps) => {
   return (
-    <section className="border-y border-opacity-20 bg-black/5 dark:bg-white/10 p-2 rounded-lg min-w-60 space-y-4">
-      <h2 className="text-blue-00 dark:text-blue-500 font-semibold text-xl uppercase">Education</h2>
+    <SimpleCard title="Education">
       {education.map(education => (
         <article
           key={education.school}
@@ -19,6 +19,6 @@ export const Education = ({ education }: EducationProps) => {
           <span className="font-normal">[{education.startdate} - {education.enddate}]</span>
         </article>
       ))}
-    </section>
+    </SimpleCard>
   );
 };

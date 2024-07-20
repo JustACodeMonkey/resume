@@ -1,12 +1,12 @@
 import { getJobs, IJob } from '@/data/get-jobs';
 import { Job } from './job';
+import { SimpleCard } from './simple-card';
 
 export const Experience = async () => {
   const jobs = await getJobs() as IJob[];
 
   return (
-    <section className="border-y border-opacity-20 bg-black/5 dark:bg-white/10 p-2 rounded-lg space-y-4">
-      <h2 className="text-blue-500 font-semibold text-xl uppercase">Experience</h2>
+    <SimpleCard title="Experience" className="w-full">
       {jobs.map((job: IJob, index: number) => (
         <>
           <Job key={job.title} job={job} />
@@ -15,6 +15,6 @@ export const Experience = async () => {
           )}
         </>
       ))}
-    </section>
+    </SimpleCard>
   );
 };

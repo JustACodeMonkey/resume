@@ -8,6 +8,8 @@ export interface IJob {
   startdate: string;
   enddate: string;
   details: IJobDetails[];
+  logo?: string;
+  url?: string;
 }
 export interface IJobDetails {
   title: string;
@@ -24,7 +26,9 @@ export const getJobs = async () => {
               title,
               startdate,
               enddate,
-              details 
+              details,
+              logo,
+              url
         FROM  job 
         ORDER BY 
           _order ASC`;

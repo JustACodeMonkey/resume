@@ -28,7 +28,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={roboto.className}>
+      <body className={roboto.className + " bg-[url('/ski-resort.jpg')] bg-fixed bg-no-repeat bg-center"}>
         <Header />
         <main className="p-4 sm:px-center-screen w-full min-h-52">
           {children}
