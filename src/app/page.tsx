@@ -7,6 +7,7 @@ import { Mission } from '@/components/mission';
 import { Skills } from '@/components/skills';
 import Image from 'next/image';
 import { SimpleCard } from '@/components/simple-card';
+import { TagLine } from '@/components/tag-line';
 
 export default async function Home() {
   
@@ -16,6 +17,7 @@ export default async function Home() {
 
   return (
     <div className="flex flex-col gap-4 space-y-4 py-4">
+      <TagLine />
       <Mission />
       <div className="flex flex-col md:flex-row gap-4">
         <div className="flex flex-col space-y-4">
